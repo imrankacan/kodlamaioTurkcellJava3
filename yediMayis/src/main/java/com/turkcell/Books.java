@@ -26,7 +26,7 @@ public class Books {
     }
 
     public void setYazaradi(String authorName) {
-        this.yazarAdi = authorName;
+        this.authorName = authorName;
     }
 
 
