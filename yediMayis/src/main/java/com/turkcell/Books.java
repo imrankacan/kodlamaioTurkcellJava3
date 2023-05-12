@@ -3,7 +3,7 @@ package com.turkcell;
 public class Books {
     int id;
     String name;
-    String yazarAdi;
+    String authorName;
 
     public int getId() {
         return id;
@@ -21,12 +21,12 @@ public class Books {
         this.name = name;
     }
 
-    public String getYazarAdi() {
-        return yazarAdi;
+    public String getauthorName() {
+        return authorName;
     }
 
-    public void setYazaradi(String yazarAdi) {
-        this.yazarAdi = yazarAdi;
+    public void setYazaradi(String authorName) {
+        this.yazarAdi = authorName;
     }
 
 
