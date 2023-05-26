@@ -14,5 +14,15 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Product {
+    @Column(name="product_id")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private short productId;
 
+    @Column(name = "unit_price")
+    private float unitPrice;
+
+    @ManyToOne()
+    @JoinColumn(name="category_id")
+    private Category category;
 }
