@@ -1,4 +1,16 @@
+-- Database: northwind
 
+-- DROP DATABASE IF EXISTS northwind;
+
+CREATE DATABASE northwind
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Turkish_Turkey.1254'
+    LC_CTYPE = 'Turkish_Turkey.1254'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
    --10. Fiyatı 30 dan büyük kaç ürün var?
 
 select count(products) as "ürün sayısı" from products where unit_price>30
@@ -674,7 +686,9 @@ select* from customers where company_name like '%Restaurant%'
 select product_name,unit_price from products where unit_price between 50 and 100
 
 
-    78. 1 temmuz 1996 ile 31 Aralık 1996 tarihleri arasındaki siparişlerin (Orders), SiparişID (OrderID) ve SiparişTarihi (OrderDate) bilgileri
+    /*
+	78. 1 temmuz 1996 ile 31 Aralık 1996 tarihleri arasındaki siparişlerin (Orders), SiparişID (OrderID) ve SiparişTarihi (OrderDate) bilgileri
     79. Ülkesi (Country) YA Spain, Ya France, Ya da Germany olan müşteriler
     80. Faks numarasını bilmediğim müşteriler
+	*/
 
